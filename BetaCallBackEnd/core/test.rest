@@ -1,0 +1,19 @@
+POST http://127.0.0.1:8000/api/login
+Content-Type: application/json
+
+{ "email": "amirbekovaleh@gmail.com", "password": "admin123!" }
+
+###
+
+POST http://127.0.0.1:8000/api/signup
+Content-Type: application/json
+
+{ "email": "amirbekovaleh@gmail.com", "first_name": "Valeh", "last_name": "Amirbekov", "password": "admin123!" }
+
+###
+
+GET http://127.0.0.1:8000/api/test_token
+Content-Type: application/json
+Authorization: Token 7d02f3c4d3b8176675dfae1ee3592520f39ebaea
+
+{ }
